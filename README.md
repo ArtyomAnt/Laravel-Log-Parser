@@ -10,6 +10,10 @@ When a DB would run out of diskspace no more consents can be stored in the PG da
 
 Write a log file parser that would extract the data needed and store that back in to the consent database. Remember that we can allow about 500 connections to the database. The logfiles are large files could contain millions of records. 
 
+- How would you solve this issue? What is the best solution you can think of?
+- Describe any risks involved, if any.
+- Write the log file parser.
+
 ## Example log file output
 
 ```
