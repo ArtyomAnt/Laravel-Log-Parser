@@ -2,91 +2,114 @@
 
 
 
-## Getting started
+## Case description
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+When a DB would run out of diskspace no more consents can be stored in the PG database. Still these consents would be logged on our api servers in some error log. How can we get these consents parsed out of the logs and be added back to our database? 
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+## Assignment
 
-## Add your files
+Write a log file parser that would extract the data needed and store that back in to the consent database. Remember that we can allow about 500 connections to the database. The logfiles are large files could contain millions of records. 
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+## Example log file output
 
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/cookiefirst/backend-test-assignment.git
-git branch -M main
-git push -uf origin main
+{"level":30,"time":1661472030179,"pid":774314,"hostname":"ns3205231","reqId":"69cdff27-1237-4bb7-8992-fdc59b0005ce","req":{"method":"POST","url":"/prod/consent","hostname":"api.cookiefirst.com","remoteAddress":"88.68.165.117","remotePort":50402},"msg":"incoming request"}
+[request 69cdff27-1237-4bb7-8992-fdc59b0005ce] CF:: Incoming request: {
+  path: '/prod/consent',
+  query: [Object: null prototype] {},
+  body: {
+    preferences: {
+      necessary: true,
+      performance: true,
+      functional: true,
+      advertising: true
+    },
+    apiKey: 'a0aa9d2e-7cd3-4e4a-a320-2d779ca5ee1b',
+    action: 'store',
+    visitor_id: '',
+    config_version: 'bda89e26-9548-4494-b1a3-fba991384850',
+    visitor_country: 'DE',
+    visitor_region: 'BW',
+    consent_policy: 1,
+    granular_metadata: null,
+    url: 'https://www.wunschgutschein.de/'
+  },
+  headers: {
+    'x-forwarded-for': '88.68.165.117, 10.108.33.74',
+    'x-real-ip': '10.108.33.74',
+    host: 'api.cookiefirst.com',
+    connection: 'upgrade',
+    'content-length': '356',
+    'content-type': 'application/json',
+    origin: 'https://www.wunschgutschein.de',
+    'accept-encoding': 'gzip, deflate, br',
+    accept: 'application/json',
+    'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6 Mobile/15E148 Safari/604.1',
+    referer: 'https://www.wunschgutschein.de/',
+    'accept-language': 'de-DE,de;q=0.9',
+    'x-forwarded-port': '443',
+    'x-forwarded-proto': 'https',
+    'x-remote-port': '59479',
+    'x-remote-ip': '88.68.165.117',
+    'x-remote-proto': 'https',
+    forwarded: 'for=88.68.165.117; proto=https; host=api.cookiefirst.com',
+    'x-iplb-unique-id': '5844A575:E857_D5200514:01BB_63080D1E_641D5F:24748'
+  }
+}  +0ms
+[request 69cdff27-1237-4bb7-8992-fdc59b0005ce] CF:: Input  validated  +7ms
+[request 69cdff27-1237-4bb7-8992-fdc59b0005ce] CF:: Fetched site using API key  +2ms
+[request 69cdff27-1237-4bb7-8992-fdc59b0005ce] CF:: Validated request origin  +0ms
+[request 69cdff27-1237-4bb7-8992-fdc59b0005ce] CF:: Retrieved or generated visitor ID  +0ms
+[request 69cdff27-1237-4bb7-8992-fdc59b0005ce] CF:: Parsed UserAgent to detect visitor's device  +3ms
+[request 69cdff27-1237-4bb7-8992-fdc59b0005ce] CF:: Save consent changes in DB  +0ms
+[request 69cdff27-1237-4bb7-8992-fdc59b0005ce] CF:: DatabaseError: insert into "consent_changes" ("action", "consent_policy", "created_at", "device_brand", "device_browser", "device_model", "device_os", "device_type", "granular_metadata", "is_bulk_duplicate", "preferences", "referer", "site_uuid", "updated_at", "uuid", "version_uuid", "visitor_country", "visitor_id", "visitor_ip", "visitor_region", "visitor_user_agent") values ($1, $2, CURRENT_TIMESTAMP, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, CURRENT_TIMESTAMP, $13, $14, $15, $16, $17, $18, $19) - cannot execute INSERT in a read-only transaction
+    at DB.executeQuery (/home/ubuntu/cf-api-prod/src/helpers/database/DB.ts:65:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Promise.all (index 0)
+    at async insertConsentChanges (/home/ubuntu/cf-api-prod/src/helpers/database/insertConsentChanges.ts:27:3)
+    at async saveConsent (/home/ubuntu/cf-api-prod/src/api/consent/saveConsent.ts:174:5)
+    at async Object.requestHandler (/home/ubuntu/cf-api-prod/src/helpers/server/asServerRequestHandler.ts:42:23) {
+  query: {
+    method: 'insert',
+    options: {},
+    timeout: false,
+    cancelOnTimeout: false,
+    __knexQueryUid: '_I6HDCvC3XxtYunUZKeT7',
+    sql: 'insert into "consent_changes" ("action", "consent_policy", "created_at", "device_brand", "device_browser", "device_model", "device_os", "device_type", "granular_metadata", "is_bulk_duplicate", "preferences", "referer", "site_uuid", "updated_at", "uuid", "version_uuid", "visitor_country", "visitor_id", "visitor_ip", "visitor_region", "visitor_user_agent") values (?, ?, CURRENT_TIMESTAMP, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, ?, ?, ?, ?, ?, ?, ?)',
+    returning: undefined
+  },
+  host: 'postgresql-553de9ac-oa3c058b5.database.cloud.ovh.net'
+}  +2ms
+[request 69cdff27-1237-4bb7-8992-fdc59b0005ce] CF:: DatabaseError: insert into "consent_changes" ("action", "consent_policy", "created_at", "device_brand", "device_browser", "device_model", "device_os", "device_type", "granular_metadata", "is_bulk_duplicate", "preferences", "referer", "site_uuid", "updated_at", "uuid", "version_uuid", "visitor_country", "visitor_id", "visitor_ip", "visitor_region", "visitor_user_agent") values ($1, $2, CURRENT_TIMESTAMP, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, CURRENT_TIMESTAMP, $13, $14, $15, $16, $17, $18, $19) - cannot execute INSERT in a read-only transaction
+    at DB.executeQuery (/home/ubuntu/cf-api-prod/src/helpers/database/DB.ts:65:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Promise.all (index 0)
+    at async insertConsentChanges (/home/ubuntu/cf-api-prod/src/helpers/database/insertConsentChanges.ts:27:3)
+    at async saveConsent (/home/ubuntu/cf-api-prod/src/api/consent/saveConsent.ts:174:5)
+    at async Object.requestHandler (/home/ubuntu/cf-api-prod/src/helpers/server/asServerRequestHandler.ts:42:23) {
+  query: {
+    method: 'insert',
+    options: {},
+    timeout: false,
+    cancelOnTimeout: false,
+    __knexQueryUid: '_I6HDCvC3XxtYunUZKeT7',
+    sql: 'insert into "consent_changes" ("action", "consent_policy", "created_at", "device_brand", "device_browser", "device_model", "device_os", "device_type", "granular_metadata", "is_bulk_duplicate", "preferences", "referer", "site_uuid", "updated_at", "uuid", "version_uuid", "visitor_country", "visitor_id", "visitor_ip", "visitor_region", "visitor_user_agent") values (?, ?, CURRENT_TIMESTAMP, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, ?, ?, ?, ?, ?, ?, ?)',
+    returning: undefined
+  },
+  host: 'postgresql-553de9ac-oa3c058b5.database.cloud.ovh.net'
+}  +0ms
+[request 69cdff27-1237-4bb7-8992-fdc59b0005ce] CF:: Response: {
+  status: 500,
+  headers: { 'Content-Type': 'application/json' },
+  body: { data: 'Server error' }
+}  +0ms
+CF:: Execution time: 15ms
+{"level":30,"time":1661472030195,"pid":774314,"hostname":"ns3205231","reqId":"69cdff27-1237-4bb7-8992-fdc59b0005ce","res":{"statusCode":500},"responseTime":16.30810546875,"msg":"request completed"}
+{"level":30,"time":1661472030451,"pid":774314,"hostname":"ns3205231","reqId":"58fb9eac-3aba-4377-9607-6766efc1b297","req":{"method":"OPTIONS","url":"/prod/consent","hostname":"api.cookiefirst.com","remoteAddress":"93.225.246.84","remotePort":50414},"msg":"incoming request"}
+{"level":30,"time":1661472030451,"pid":774314,"hostname":"ns3205231","reqId":"58fb9eac-3aba-4377-9607-6766efc1b297","res":{"statusCode":204},"responseTime":0.2849693298339844,"msg":"request completed"}
+{"level":30,"time":1661472030688,"pid":774314,"hostname":"ns3205231","reqId":"ad3f332b-4db9-4f2e-a4a7-9c459deded16","req":{"method":"OPTIONS","url":"/prod/consent","hostname":"api.cookiefirst.com","remoteAddress":"191.221.169.136","remotePort":50428},"msg":"incoming request"}
+{"level":30,"time":1661472030689,"pid":774314,"hostname":"ns3205231","reqId":"ad3f332b-4db9-4f2e-a4a7-9c459deded16","res":{"statusCode":204},"responseTime":0.25292205810546875,"msg":"request completed"}
 ```
 
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.com/cookiefirst/backend-test-assignment/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
