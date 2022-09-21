@@ -1,18 +1,28 @@
 # Backend Test assignment
 
+### For running this on local machine you need to run 
 
+```
+composer install
 
-## Case description
+docker-compose up -d
 
-When a DB would run out of diskspace no more consents can be stored in the PG database. Still these consents would be logged on our api servers in some error log. How can we get these consents parsed out of the logs and be added back to our database? 
+php artisan migrate
 
-## Assignment
+php artisan serve 
 
-Write a log file parser that would extract the data needed and store that back in to the consent database. Remember that we can allow about 500 connections to the database. The logfiles are large files could contain millions of records. 
+php artisan queue:work
 
-- How would you solve this issue? What is the best solution you can think of?
-- Describe any risks involved, if any.
-- Write the log file parser.
+```
+After that you will have two options how to run Parser. 
+1. Via command ```php artisan log:parser --path=``` and give the path to log file
+2. Go to the browser and open  http://127.0.0.1:8000/
+### 
+
+About the risks I can say that any text parser have to many abilities to throw an error.
+This time I use regular expressions that can be not the best idea because of variety of the logs.
+Queue helps to balancing loading of your DB (you can give a timeout for messages).
+
 
 ## Example log file output
 
