@@ -1,0 +1,712 @@
+[2022-09-21 11:34:20] local.ERROR: array (
+  'path' => '/prod/consent',
+  'query' => 
+  array (
+  ),
+  'body' => 
+  array (
+    'preferences' => 
+    array (
+      'cookiefirst' => true,
+      'google_analytics' => true,
+      'google_tag_manager' => true,
+      'linkedin_ads' => true,
+      'hubspot' => true,
+      'twitter' => true,
+      'active-campaign' => true,
+      'email-marketing' => true,
+    ),
+    'apiKey' => 'f2b649a4-0919-45b6-b165-cf38ea2dcd71',
+    'action' => 'update',
+    'visitor_id' => '3681313e-f159-40e8-9948-b077c76c7b1f',
+    'config_version' => '124d6364-3d47-4d67-b621-afb8f679ce17',
+    'visitor_country' => 'SE',
+    'visitor_region' => 'M',
+    'consent_policy' => 2,
+    'granular_metadata' => 
+    array (
+      'cookiefirst' => 
+      array (
+      ),
+      'google_analytics' => 
+      array (
+      ),
+      'google_tag_manager' => 
+      array (
+      ),
+      'linkedin_ads' => 
+      array (
+      ),
+      'hubspot' => 
+      array (
+      ),
+      'twitter' => 
+      array (
+      ),
+      'active-campaign' => 
+      array (
+      ),
+      'email-marketing' => 
+      array (
+      ),
+    ),
+    'url' => 'https://hemmersbach.com/career/browse-jobs',
+  ),
+  'headers' => 
+  array (
+    'x-forwarded-for' => '81.231.9.165, 10.108.33.47',
+    'x-real-ip' => '10.108.33.47',
+    'host' => 'api.cookiefirst.com',
+    'connection' => 'upgrade',
+    'content-length' => '1510',
+    'sec-ch-ua' => '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"',
+    'accept' => 'application/json',
+    'content-type' => 'application/json',
+    'sec-ch-ua-mobile' => '?0',
+    'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36',
+    'sec-ch-ua-platform' => '"Windows"',
+    'origin' => 'https://hemmersbach.com',
+    'sec-fetch-site' => 'cross-site',
+    'sec-fetch-mode' => 'cors',
+    'sec-fetch-dest' => 'empty',
+    'accept-encoding' => 'gzip, deflate, br',
+    'accept-language' => 'en-GB,en;q=0.9,sv-SE;q=0.8,sv;q=0.7,en-US;q=0.6',
+    'x-forwarded-port' => '443',
+    'x-forwarded-proto' => 'https',
+    'x-remote-port' => '58224',
+    'x-remote-ip' => '81.231.9.165',
+    'x-remote-proto' => 'https',
+    'forwarded' => 'for=81.231.9.165; proto=https; host=api.cookiefirst.com',
+    'x-iplb-unique-id' => '51E709A5:E370_D5200514:01BB_63080EFE_6437C8:24749',
+  ),
+  'request_id' => 'a144a7fe-ba0c-4608-8402-71b8f7b9ecb9',
+)  
+[2022-09-21 11:34:20] local.ERROR: array (
+  'path' => '/prod/consent',
+  'query' => 
+  array (
+  ),
+  'body' => 
+  array (
+    'preferences' => 
+    array (
+      'necessary' => true,
+      'performance' => true,
+      'functional' => true,
+      'advertising' => true,
+    ),
+    'apiKey' => 'a0aa9d2e-7cd3-4e4a-a320-2d779ca5ee1b',
+    'action' => 'store',
+    'visitor_id' => '',
+    'config_version' => 'bda89e26-9548-4494-b1a3-fba991384850',
+    'visitor_country' => 'DE',
+    'visitor_region' => 'BW',
+    'consent_policy' => 1,
+    'granular_metadata' => NULL,
+    'url' => 'https://www.wunschgutschein.de/',
+  ),
+  'headers' => 
+  array (
+    'x-forwarded-for' => '88.68.165.117, 10.108.33.74',
+    'x-real-ip' => '10.108.33.74',
+    'host' => 'api.cookiefirst.com',
+    'connection' => 'upgrade',
+    'content-length' => '356',
+    'content-type' => 'application/json',
+    'origin' => 'https://www.wunschgutschein.de',
+    'accept-encoding' => 'gzip, deflate, br',
+    'accept' => 'application/json',
+    'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6 Mobile/15E148 Safari/604.1',
+    'referer' => 'https://www.wunschgutschein.de/',
+    'accept-language' => 'de-DE,de;q=0.9',
+    'x-forwarded-port' => '443',
+    'x-forwarded-proto' => 'https',
+    'x-remote-port' => '59479',
+    'x-remote-ip' => '88.68.165.117',
+    'x-remote-proto' => 'https',
+    'forwarded' => 'for=88.68.165.117; proto=https; host=api.cookiefirst.com',
+    'x-iplb-unique-id' => '5844A575:E857_D5200514:01BB_63080D1E_641D5F:24748',
+  ),
+  'request_id' => '69cdff27-1237-4bb7-8992-fdc59b0005ce',
+)  
+[2022-09-21 11:41:48] local.ERROR: Array to string conversion {"exception":"[object] (ErrorException(code: 0): Array to string conversion at D:\\work\\Kees\\app\\Jobs\\LogRestoring.php:46)
+[stacktrace]
+#0 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(259): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Array to string...', 'D:\\\\work\\\\Kees\\\\ap...', 46)
+#1 D:\\work\\Kees\\app\\Jobs\\LogRestoring.php(46): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Array to string...', 'D:\\\\work\\\\Kees\\\\ap...', 46)
+#2 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Jobs\\LogRestoring->handle(Object(App\\Models\\Consent))
+#3 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#6 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#7 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(128): Illuminate\\Container\\Container->call(Array)
+#8 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}(Object(App\\Jobs\\LogRestoring))
+#9 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\LogRestoring))
+#10 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#11 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(124): Illuminate\\Bus\\Dispatcher->dispatchNow(Object(App\\Jobs\\LogRestoring), false)
+#12 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}(Object(App\\Jobs\\LogRestoring))
+#13 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\LogRestoring))
+#14 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(126): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#15 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(70): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Object(App\\Jobs\\LogRestoring))
+#16 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(98): Illuminate\\Queue\\CallQueuedHandler->call(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Array)
+#17 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(425): Illuminate\\Queue\\Jobs\\Job->fire()
+#18 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(375): Illuminate\\Queue\\Worker->process('database', Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Object(Illuminate\\Queue\\WorkerOptions))
+#19 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(173): Illuminate\\Queue\\Worker->runJob(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), 'database', Object(Illuminate\\Queue\\WorkerOptions))
+#20 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Console\\WorkCommand.php(150): Illuminate\\Queue\\Worker->daemon('database', 'default', Object(Illuminate\\Queue\\WorkerOptions))
+#21 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Console\\WorkCommand.php(134): Illuminate\\Queue\\Console\\WorkCommand->runWorker('database', 'default')
+#22 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Queue\\Console\\WorkCommand->handle()
+#23 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#25 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#26 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#27 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(144): Illuminate\\Container\\Container->call(Array)
+#28 D:\\work\\Kees\\vendor\\symfony\\console\\Command\\Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#29 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(126): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(1002): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Queue\\Console\\WorkCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 D:\\work\\Kees\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
+[2022-09-21 11:41:48] local.ERROR: Array to string conversion {"exception":"[object] (ErrorException(code: 0): Array to string conversion at D:\\work\\Kees\\app\\Jobs\\LogRestoring.php:46)
+[stacktrace]
+#0 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(259): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Array to string...', 'D:\\\\work\\\\Kees\\\\ap...', 46)
+#1 D:\\work\\Kees\\app\\Jobs\\LogRestoring.php(46): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Array to string...', 'D:\\\\work\\\\Kees\\\\ap...', 46)
+#2 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Jobs\\LogRestoring->handle(Object(App\\Models\\Consent))
+#3 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#6 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#7 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(128): Illuminate\\Container\\Container->call(Array)
+#8 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}(Object(App\\Jobs\\LogRestoring))
+#9 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\LogRestoring))
+#10 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#11 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(124): Illuminate\\Bus\\Dispatcher->dispatchNow(Object(App\\Jobs\\LogRestoring), false)
+#12 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}(Object(App\\Jobs\\LogRestoring))
+#13 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\LogRestoring))
+#14 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(126): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#15 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(70): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Object(App\\Jobs\\LogRestoring))
+#16 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(98): Illuminate\\Queue\\CallQueuedHandler->call(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Array)
+#17 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(425): Illuminate\\Queue\\Jobs\\Job->fire()
+#18 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(375): Illuminate\\Queue\\Worker->process('database', Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Object(Illuminate\\Queue\\WorkerOptions))
+#19 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(173): Illuminate\\Queue\\Worker->runJob(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), 'database', Object(Illuminate\\Queue\\WorkerOptions))
+#20 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Console\\WorkCommand.php(150): Illuminate\\Queue\\Worker->daemon('database', 'default', Object(Illuminate\\Queue\\WorkerOptions))
+#21 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Console\\WorkCommand.php(134): Illuminate\\Queue\\Console\\WorkCommand->runWorker('database', 'default')
+#22 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Queue\\Console\\WorkCommand->handle()
+#23 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#25 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#26 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#27 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(144): Illuminate\\Container\\Container->call(Array)
+#28 D:\\work\\Kees\\vendor\\symfony\\console\\Command\\Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#29 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(126): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(1002): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Queue\\Console\\WorkCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 D:\\work\\Kees\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
+[2022-09-21 11:42:06] local.INFO: Request # was saved successful  
+[2022-09-21 11:42:06] local.INFO: Request # was saved successful  
+[2022-09-21 11:42:25] local.INFO: Request # was saved successful  
+[2022-09-21 11:42:25] local.INFO: Request # was saved successful  
+[2022-09-21 11:42:47] local.INFO: Request # was saved successful  
+[2022-09-21 11:42:47] local.INFO: Request # was saved successful  
+[2022-09-21 11:43:16] local.ERROR: Array to string conversion {"exception":"[object] (ErrorException(code: 0): Array to string conversion at D:\\work\\Kees\\app\\Jobs\\LogRestoring.php:45)
+[stacktrace]
+#0 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(259): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Array to string...', 'D:\\\\work\\\\Kees\\\\ap...', 45)
+#1 D:\\work\\Kees\\app\\Jobs\\LogRestoring.php(45): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Array to string...', 'D:\\\\work\\\\Kees\\\\ap...', 45)
+#2 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Jobs\\LogRestoring->handle(Object(App\\Models\\Consent))
+#3 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#6 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#7 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(128): Illuminate\\Container\\Container->call(Array)
+#8 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}(Object(App\\Jobs\\LogRestoring))
+#9 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\LogRestoring))
+#10 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#11 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(124): Illuminate\\Bus\\Dispatcher->dispatchNow(Object(App\\Jobs\\LogRestoring), false)
+#12 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}(Object(App\\Jobs\\LogRestoring))
+#13 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\LogRestoring))
+#14 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(126): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#15 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(70): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Object(App\\Jobs\\LogRestoring))
+#16 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(98): Illuminate\\Queue\\CallQueuedHandler->call(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Array)
+#17 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(425): Illuminate\\Queue\\Jobs\\Job->fire()
+#18 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(375): Illuminate\\Queue\\Worker->process('database', Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Object(Illuminate\\Queue\\WorkerOptions))
+#19 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(173): Illuminate\\Queue\\Worker->runJob(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), 'database', Object(Illuminate\\Queue\\WorkerOptions))
+#20 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Console\\WorkCommand.php(150): Illuminate\\Queue\\Worker->daemon('database', 'default', Object(Illuminate\\Queue\\WorkerOptions))
+#21 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Console\\WorkCommand.php(134): Illuminate\\Queue\\Console\\WorkCommand->runWorker('database', 'default')
+#22 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Queue\\Console\\WorkCommand->handle()
+#23 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#25 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#26 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#27 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(144): Illuminate\\Container\\Container->call(Array)
+#28 D:\\work\\Kees\\vendor\\symfony\\console\\Command\\Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#29 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(126): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(1002): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Queue\\Console\\WorkCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 D:\\work\\Kees\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
+[2022-09-21 11:43:16] local.ERROR: Array to string conversion {"exception":"[object] (ErrorException(code: 0): Array to string conversion at D:\\work\\Kees\\app\\Jobs\\LogRestoring.php:45)
+[stacktrace]
+#0 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(259): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Array to string...', 'D:\\\\work\\\\Kees\\\\ap...', 45)
+#1 D:\\work\\Kees\\app\\Jobs\\LogRestoring.php(45): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Array to string...', 'D:\\\\work\\\\Kees\\\\ap...', 45)
+#2 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Jobs\\LogRestoring->handle(Object(App\\Models\\Consent))
+#3 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#6 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#7 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(128): Illuminate\\Container\\Container->call(Array)
+#8 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}(Object(App\\Jobs\\LogRestoring))
+#9 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\LogRestoring))
+#10 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#11 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(124): Illuminate\\Bus\\Dispatcher->dispatchNow(Object(App\\Jobs\\LogRestoring), false)
+#12 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}(Object(App\\Jobs\\LogRestoring))
+#13 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\LogRestoring))
+#14 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(126): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#15 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(70): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Object(App\\Jobs\\LogRestoring))
+#16 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(98): Illuminate\\Queue\\CallQueuedHandler->call(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Array)
+#17 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(425): Illuminate\\Queue\\Jobs\\Job->fire()
+#18 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(375): Illuminate\\Queue\\Worker->process('database', Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Object(Illuminate\\Queue\\WorkerOptions))
+#19 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(173): Illuminate\\Queue\\Worker->runJob(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), 'database', Object(Illuminate\\Queue\\WorkerOptions))
+#20 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Console\\WorkCommand.php(150): Illuminate\\Queue\\Worker->daemon('database', 'default', Object(Illuminate\\Queue\\WorkerOptions))
+#21 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Console\\WorkCommand.php(134): Illuminate\\Queue\\Console\\WorkCommand->runWorker('database', 'default')
+#22 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Queue\\Console\\WorkCommand->handle()
+#23 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#25 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#26 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#27 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(144): Illuminate\\Container\\Container->call(Array)
+#28 D:\\work\\Kees\\vendor\\symfony\\console\\Command\\Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#29 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(126): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(1002): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Queue\\Console\\WorkCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 D:\\work\\Kees\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
+[2022-09-21 11:53:38] local.ERROR: Array to string conversion {"exception":"[object] (ErrorException(code: 0): Array to string conversion at D:\\work\\Kees\\app\\Jobs\\LogRestoring.php:46)
+[stacktrace]
+#0 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(259): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Array to string...', 'D:\\\\work\\\\Kees\\\\ap...', 46)
+#1 D:\\work\\Kees\\app\\Jobs\\LogRestoring.php(46): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Array to string...', 'D:\\\\work\\\\Kees\\\\ap...', 46)
+#2 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Jobs\\LogRestoring->handle(Object(App\\Models\\Consent))
+#3 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#6 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#7 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(128): Illuminate\\Container\\Container->call(Array)
+#8 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}(Object(App\\Jobs\\LogRestoring))
+#9 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\LogRestoring))
+#10 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#11 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(124): Illuminate\\Bus\\Dispatcher->dispatchNow(Object(App\\Jobs\\LogRestoring), false)
+#12 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}(Object(App\\Jobs\\LogRestoring))
+#13 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\LogRestoring))
+#14 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(126): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#15 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(70): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Object(App\\Jobs\\LogRestoring))
+#16 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(98): Illuminate\\Queue\\CallQueuedHandler->call(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Array)
+#17 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(425): Illuminate\\Queue\\Jobs\\Job->fire()
+#18 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(375): Illuminate\\Queue\\Worker->process('database', Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Object(Illuminate\\Queue\\WorkerOptions))
+#19 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(173): Illuminate\\Queue\\Worker->runJob(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), 'database', Object(Illuminate\\Queue\\WorkerOptions))
+#20 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Console\\WorkCommand.php(150): Illuminate\\Queue\\Worker->daemon('database', 'default', Object(Illuminate\\Queue\\WorkerOptions))
+#21 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Console\\WorkCommand.php(134): Illuminate\\Queue\\Console\\WorkCommand->runWorker('database', 'default')
+#22 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Queue\\Console\\WorkCommand->handle()
+#23 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#25 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#26 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#27 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(144): Illuminate\\Container\\Container->call(Array)
+#28 D:\\work\\Kees\\vendor\\symfony\\console\\Command\\Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#29 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(126): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(1002): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Queue\\Console\\WorkCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 D:\\work\\Kees\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
+[2022-09-21 11:53:38] local.ERROR: Array to string conversion {"exception":"[object] (ErrorException(code: 0): Array to string conversion at D:\\work\\Kees\\app\\Jobs\\LogRestoring.php:46)
+[stacktrace]
+#0 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(259): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Array to string...', 'D:\\\\work\\\\Kees\\\\ap...', 46)
+#1 D:\\work\\Kees\\app\\Jobs\\LogRestoring.php(46): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Array to string...', 'D:\\\\work\\\\Kees\\\\ap...', 46)
+#2 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Jobs\\LogRestoring->handle(Object(App\\Models\\Consent))
+#3 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#6 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#7 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(128): Illuminate\\Container\\Container->call(Array)
+#8 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}(Object(App\\Jobs\\LogRestoring))
+#9 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\LogRestoring))
+#10 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#11 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(124): Illuminate\\Bus\\Dispatcher->dispatchNow(Object(App\\Jobs\\LogRestoring), false)
+#12 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}(Object(App\\Jobs\\LogRestoring))
+#13 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\LogRestoring))
+#14 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(126): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#15 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(70): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Object(App\\Jobs\\LogRestoring))
+#16 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(98): Illuminate\\Queue\\CallQueuedHandler->call(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Array)
+#17 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(425): Illuminate\\Queue\\Jobs\\Job->fire()
+#18 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(375): Illuminate\\Queue\\Worker->process('database', Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Object(Illuminate\\Queue\\WorkerOptions))
+#19 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(173): Illuminate\\Queue\\Worker->runJob(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), 'database', Object(Illuminate\\Queue\\WorkerOptions))
+#20 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Console\\WorkCommand.php(150): Illuminate\\Queue\\Worker->daemon('database', 'default', Object(Illuminate\\Queue\\WorkerOptions))
+#21 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Console\\WorkCommand.php(134): Illuminate\\Queue\\Console\\WorkCommand->runWorker('database', 'default')
+#22 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Queue\\Console\\WorkCommand->handle()
+#23 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#25 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#26 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#27 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(144): Illuminate\\Container\\Container->call(Array)
+#28 D:\\work\\Kees\\vendor\\symfony\\console\\Command\\Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#29 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(126): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(1002): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Queue\\Console\\WorkCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 D:\\work\\Kees\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
+[2022-09-21 11:54:05] local.INFO: Request a144a7fe-ba0c-4608-8402-71b8f7b9ecb9 was saved successful  
+[2022-09-21 11:54:05] local.INFO: Request 69cdff27-1237-4bb7-8992-fdc59b0005ce was saved successful  
+[2022-09-21 12:42:21] local.ERROR: Too few arguments to function App\Services\LogReader::__construct(), 1 passed in D:\work\Kees\app\Http\Controllers\ParserController.php on line 11 and exactly 2 expected {"exception":"[object] (ArgumentCountError(code: 0): Too few arguments to function App\\Services\\LogReader::__construct(), 1 passed in D:\\work\\Kees\\app\\Http\\Controllers\\ParserController.php on line 11 and exactly 2 expected at D:\\work\\Kees\\app\\Services\\LogReader.php:13)
+[stacktrace]
+#0 D:\\work\\Kees\\app\\Http\\Controllers\\ParserController.php(11): App\\Services\\LogReader->__construct('/logs/data.log')
+#1 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\ParserController->index()
+#2 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('index', Array)
+#3 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(261): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\ParserController), 'index')
+#4 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(204): Illuminate\\Routing\\Route->runController()
+#5 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(725): Illuminate\\Routing\\Route->run()
+#6 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#7 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#8 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#9 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#15 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(726): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#22 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(703): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#23 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(667): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#24 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(656): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#25 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#26 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 D:\\work\\Kees\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\work\\\\Kees\\\\pu...')
+#46 {main}
+"} 
+[2022-09-21 12:54:00] local.ERROR: Syntax error  
+[2022-09-21 12:54:00] local.ERROR: Syntax error  
+[2022-09-21 13:09:29] local.INFO: Request a144a7fe-ba0c-4608-8402-71b8f7b9ecb9 was saved successful  
+[2022-09-21 13:09:29] local.INFO: Request 69cdff27-1237-4bb7-8992-fdc59b0005ce was saved successful  
+[2022-09-21 13:12:03] local.ERROR: could not find driver (SQL: insert into `jobs` (`queue`, `attempts`, `reserved_at`, `available_at`, `created_at`, `payload`) values (default, 0, ?, 1663765923, 1663765923, {"uuid":"4037041c-2711-47f4-a2ba-17101d97f6aa","displayName":"App\\Jobs\\LogRestoring","job":"Illuminate\\Queue\\CallQueuedHandler@call","maxTries":null,"maxExceptions":null,"failOnTimeout":false,"backoff":null,"timeout":null,"retryUntil":null,"data":{"commandName":"App\\Jobs\\LogRestoring","command":"O:21:\"App\\Jobs\\LogRestoring\":1:{s:30:\"\u0000App\\Jobs\\LogRestoring\u0000consent\";a:5:{s:4:\"path\";s:13:\"\/prod\/consent\";s:5:\"query\";a:0:{}s:4:\"body\";a:10:{s:11:\"preferences\";a:8:{s:11:\"cookiefirst\";b:1;s:16:\"google_analytics\";b:1;s:18:\"google_tag_manager\";b:1;s:12:\"linkedin_ads\";b:1;s:7:\"hubspot\";b:1;s:7:\"twitter\";b:1;s:15:\"active-campaign\";b:1;s:15:\"email-marketing\";b:1;}s:6:\"apiKey\";s:36:\"f2b649a4-0919-45b6-b165-cf38ea2dcd71\";s:6:\"action\";s:6:\"update\";s:10:\"visitor_id\";s:36:\"3681313e-f159-40e8-9948-b077c76c7b1f\";s:14:\"config_version\";s:36:\"124d6364-3d47-4d67-b621-afb8f679ce17\";s:15:\"visitor_country\";s:2:\"SE\";s:14:\"visitor_region\";s:1:\"M\";s:14:\"consent_policy\";i:2;s:17:\"granular_metadata\";a:8:{s:11:\"cookiefirst\";a:0:{}s:16:\"google_analytics\";a:0:{}s:18:\"google_tag_manager\";a:0:{}s:12:\"linkedin_ads\";a:0:{}s:7:\"hubspot\";a:0:{}s:7:\"twitter\";a:0:{}s:15:\"active-campaign\";a:0:{}s:15:\"email-marketing\";a:0:{}}s:3:\"url\";s:42:\"https:\/\/hemmersbach.com\/career\/browse-jobs\";}s:7:\"headers\";a:24:{s:15:\"x-forwarded-for\";s:26:\"81.231.9.165, 10.108.33.47\";s:9:\"x-real-ip\";s:12:\"10.108.33.47\";s:4:\"host\";s:19:\"api.cookiefirst.com\";s:10:\"connection\";s:7:\"upgrade\";s:14:\"content-length\";s:4:\"1510\";s:9:\"sec-ch-ua\";s:66:\"\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"\";s:6:\"accept\";s:16:\"application\/json\";s:12:\"content-type\";s:16:\"application\/json\";s:16:\"sec-ch-ua-mobile\";s:2:\"?0\";s:10:\"user-agent\";s:111:\"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/104.0.0.0 Safari\/537.36\";s:18:\"sec-ch-ua-platform\";s:9:\"\"Windows\"\";s:6:\"origin\";s:23:\"https:\/\/hemmersbach.com\";s:14:\"sec-fetch-site\";s:10:\"cross-site\";s:14:\"sec-fetch-mode\";s:4:\"cors\";s:14:\"sec-fetch-dest\";s:5:\"empty\";s:15:\"accept-encoding\";s:17:\"gzip, deflate, br\";s:15:\"accept-language\";s:47:\"en-GB,en;q=0.9,sv-SE;q=0.8,sv;q=0.7,en-US;q=0.6\";s:16:\"x-forwarded-port\";s:3:\"443\";s:17:\"x-forwarded-proto\";s:5:\"https\";s:13:\"x-remote-port\";s:5:\"58224\";s:11:\"x-remote-ip\";s:12:\"81.231.9.165\";s:14:\"x-remote-proto\";s:5:\"https\";s:9:\"forwarded\";s:55:\"for=81.231.9.165; proto=https; host=api.cookiefirst.com\";s:16:\"x-iplb-unique-id\";s:49:\"51E709A5:E370_D5200514:01BB_63080EFE_6437C8:24749\";}s:10:\"request_id\";s:36:\"a144a7fe-ba0c-4608-8402-71b8f7b9ecb9\";}}"}})) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 0): could not find driver (SQL: insert into `jobs` (`queue`, `attempts`, `reserved_at`, `available_at`, `created_at`, `payload`) values (default, 0, ?, 1663765923, 1663765923, {\"uuid\":\"4037041c-2711-47f4-a2ba-17101d97f6aa\",\"displayName\":\"App\\\\Jobs\\\\LogRestoring\",\"job\":\"Illuminate\\\\Queue\\\\CallQueuedHandler@call\",\"maxTries\":null,\"maxExceptions\":null,\"failOnTimeout\":false,\"backoff\":null,\"timeout\":null,\"retryUntil\":null,\"data\":{\"commandName\":\"App\\\\Jobs\\\\LogRestoring\",\"command\":\"O:21:\\\"App\\\\Jobs\\\\LogRestoring\\\":1:{s:30:\\\"\\u0000App\\\\Jobs\\\\LogRestoring\\u0000consent\\\";a:5:{s:4:\\\"path\\\";s:13:\\\"\\/prod\\/consent\\\";s:5:\\\"query\\\";a:0:{}s:4:\\\"body\\\";a:10:{s:11:\\\"preferences\\\";a:8:{s:11:\\\"cookiefirst\\\";b:1;s:16:\\\"google_analytics\\\";b:1;s:18:\\\"google_tag_manager\\\";b:1;s:12:\\\"linkedin_ads\\\";b:1;s:7:\\\"hubspot\\\";b:1;s:7:\\\"twitter\\\";b:1;s:15:\\\"active-campaign\\\";b:1;s:15:\\\"email-marketing\\\";b:1;}s:6:\\\"apiKey\\\";s:36:\\\"f2b649a4-0919-45b6-b165-cf38ea2dcd71\\\";s:6:\\\"action\\\";s:6:\\\"update\\\";s:10:\\\"visitor_id\\\";s:36:\\\"3681313e-f159-40e8-9948-b077c76c7b1f\\\";s:14:\\\"config_version\\\";s:36:\\\"124d6364-3d47-4d67-b621-afb8f679ce17\\\";s:15:\\\"visitor_country\\\";s:2:\\\"SE\\\";s:14:\\\"visitor_region\\\";s:1:\\\"M\\\";s:14:\\\"consent_policy\\\";i:2;s:17:\\\"granular_metadata\\\";a:8:{s:11:\\\"cookiefirst\\\";a:0:{}s:16:\\\"google_analytics\\\";a:0:{}s:18:\\\"google_tag_manager\\\";a:0:{}s:12:\\\"linkedin_ads\\\";a:0:{}s:7:\\\"hubspot\\\";a:0:{}s:7:\\\"twitter\\\";a:0:{}s:15:\\\"active-campaign\\\";a:0:{}s:15:\\\"email-marketing\\\";a:0:{}}s:3:\\\"url\\\";s:42:\\\"https:\\/\\/hemmersbach.com\\/career\\/browse-jobs\\\";}s:7:\\\"headers\\\";a:24:{s:15:\\\"x-forwarded-for\\\";s:26:\\\"81.231.9.165, 10.108.33.47\\\";s:9:\\\"x-real-ip\\\";s:12:\\\"10.108.33.47\\\";s:4:\\\"host\\\";s:19:\\\"api.cookiefirst.com\\\";s:10:\\\"connection\\\";s:7:\\\"upgrade\\\";s:14:\\\"content-length\\\";s:4:\\\"1510\\\";s:9:\\\"sec-ch-ua\\\";s:66:\\\"\\\"Chromium\\\";v=\\\"104\\\", \\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Google Chrome\\\";v=\\\"104\\\"\\\";s:6:\\\"accept\\\";s:16:\\\"application\\/json\\\";s:12:\\\"content-type\\\";s:16:\\\"application\\/json\\\";s:16:\\\"sec-ch-ua-mobile\\\";s:2:\\\"?0\\\";s:10:\\\"user-agent\\\";s:111:\\\"Mozilla\\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/104.0.0.0 Safari\\/537.36\\\";s:18:\\\"sec-ch-ua-platform\\\";s:9:\\\"\\\"Windows\\\"\\\";s:6:\\\"origin\\\";s:23:\\\"https:\\/\\/hemmersbach.com\\\";s:14:\\\"sec-fetch-site\\\";s:10:\\\"cross-site\\\";s:14:\\\"sec-fetch-mode\\\";s:4:\\\"cors\\\";s:14:\\\"sec-fetch-dest\\\";s:5:\\\"empty\\\";s:15:\\\"accept-encoding\\\";s:17:\\\"gzip, deflate, br\\\";s:15:\\\"accept-language\\\";s:47:\\\"en-GB,en;q=0.9,sv-SE;q=0.8,sv;q=0.7,en-US;q=0.6\\\";s:16:\\\"x-forwarded-port\\\";s:3:\\\"443\\\";s:17:\\\"x-forwarded-proto\\\";s:5:\\\"https\\\";s:13:\\\"x-remote-port\\\";s:5:\\\"58224\\\";s:11:\\\"x-remote-ip\\\";s:12:\\\"81.231.9.165\\\";s:14:\\\"x-remote-proto\\\";s:5:\\\"https\\\";s:9:\\\"forwarded\\\";s:55:\\\"for=81.231.9.165; proto=https; host=api.cookiefirst.com\\\";s:16:\\\"x-iplb-unique-id\\\";s:49:\\\"51E709A5:E370_D5200514:01BB_63080EFE_6437C8:24749\\\";}s:10:\\\"request_id\\\";s:36:\\\"a144a7fe-ba0c-4608-8402-71b8f7b9ecb9\\\";}}\"}})) at /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Connection.php:759)
+[stacktrace]
+#0 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Connection.php(719): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Connection.php(545): Illuminate\\Database\\Connection->run()
+#2 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Connection.php(497): Illuminate\\Database\\Connection->statement()
+#3 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(32): Illuminate\\Database\\Connection->insert()
+#4 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3252): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId()
+#5 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php(186): Illuminate\\Database\\Query\\Builder->insertGetId()
+#6 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php(96): Illuminate\\Queue\\DatabaseQueue->pushToDatabase()
+#7 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Queue/Queue.php(315): Illuminate\\Queue\\DatabaseQueue->Illuminate\\Queue\\{closure}()
+#8 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php(97): Illuminate\\Queue\\Queue->enqueueUsing()
+#9 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(253): Illuminate\\Queue\\DatabaseQueue->push()
+#10 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(229): Illuminate\\Bus\\Dispatcher->pushCommandToQueue()
+#11 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(77): Illuminate\\Bus\\Dispatcher->dispatchToQueue()
+#12 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Foundation/Bus/PendingDispatch.php(193): Illuminate\\Bus\\Dispatcher->dispatch()
+#13 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Foundation/Bus/Dispatchable.php(18): Illuminate\\Foundation\\Bus\\PendingDispatch->__destruct()
+#14 /mnt/d/work/Kees/app/Services/LogReader.php(54): App\\Jobs\\LogRestoring::dispatch()
+#15 /mnt/d/work/Kees/app/Console/Commands/LogParser.php(32): App\\Services\\LogReader->readLogAndDispatchMessages()
+#16 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App\\Console\\Commands\\LogParser->handle()
+#17 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#18 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#19 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#20 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call()
+#21 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Console/Command.php(144): Illuminate\\Container\\Container->call()
+#22 /mnt/d/work/Kees/vendor/symfony/console/Command/Command.php(308): Illuminate\\Console\\Command->execute()
+#23 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Console/Command.php(126): Symfony\\Component\\Console\\Command\\Command->run()
+#24 /mnt/d/work/Kees/vendor/symfony/console/Application.php(1002): Illuminate\\Console\\Command->run()
+#25 /mnt/d/work/Kees/vendor/symfony/console/Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand()
+#26 /mnt/d/work/Kees/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#27 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#28 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#29 /mnt/d/work/Kees/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#30 {main}
+
+[previous exception] [object] (PDOException(code: 0): could not find driver at /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct()
+#1 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection()
+#2 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection()
+#3 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(184): Illuminate\\Database\\Connectors\\MySqlConnector->connect()
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Connection.php(1168): call_user_func()
+#6 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Connection.php(538): Illuminate\\Database\\Connection->getPdo()
+#7 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Connection.php(752): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#8 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Connection.php(719): Illuminate\\Database\\Connection->runQueryCallback()
+#9 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Connection.php(545): Illuminate\\Database\\Connection->run()
+#10 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Connection.php(497): Illuminate\\Database\\Connection->statement()
+#11 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(32): Illuminate\\Database\\Connection->insert()
+#12 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3252): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId()
+#13 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php(186): Illuminate\\Database\\Query\\Builder->insertGetId()
+#14 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php(96): Illuminate\\Queue\\DatabaseQueue->pushToDatabase()
+#15 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Queue/Queue.php(315): Illuminate\\Queue\\DatabaseQueue->Illuminate\\Queue\\{closure}()
+#16 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php(97): Illuminate\\Queue\\Queue->enqueueUsing()
+#17 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(253): Illuminate\\Queue\\DatabaseQueue->push()
+#18 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(229): Illuminate\\Bus\\Dispatcher->pushCommandToQueue()
+#19 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(77): Illuminate\\Bus\\Dispatcher->dispatchToQueue()
+#20 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Foundation/Bus/PendingDispatch.php(193): Illuminate\\Bus\\Dispatcher->dispatch()
+#21 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Foundation/Bus/Dispatchable.php(18): Illuminate\\Foundation\\Bus\\PendingDispatch->__destruct()
+#22 /mnt/d/work/Kees/app/Services/LogReader.php(54): App\\Jobs\\LogRestoring::dispatch()
+#23 /mnt/d/work/Kees/app/Console/Commands/LogParser.php(32): App\\Services\\LogReader->readLogAndDispatchMessages()
+#24 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App\\Console\\Commands\\LogParser->handle()
+#25 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#26 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#27 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#28 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call()
+#29 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Console/Command.php(144): Illuminate\\Container\\Container->call()
+#30 /mnt/d/work/Kees/vendor/symfony/console/Command/Command.php(308): Illuminate\\Console\\Command->execute()
+#31 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Console/Command.php(126): Symfony\\Component\\Console\\Command\\Command->run()
+#32 /mnt/d/work/Kees/vendor/symfony/console/Application.php(1002): Illuminate\\Console\\Command->run()
+#33 /mnt/d/work/Kees/vendor/symfony/console/Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand()
+#34 /mnt/d/work/Kees/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#35 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#36 /mnt/d/work/Kees/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#37 /mnt/d/work/Kees/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#38 {main}
+"} 
+[2022-09-21 13:12:36] local.ERROR: fopen(D:\work\Kees\storage'/logs/data.log'): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): fopen(D:\\work\\Kees\\storage'/logs/data.log'): Failed to open stream: No such file or directory at D:\\work\\Kees\\app\\Services\\LogReader.php:25)
+[stacktrace]
+#0 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(259): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'fopen(D:\\\\work\\\\K...', 'D:\\\\work\\\\Kees\\\\ap...', 25)
+#1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'fopen(D:\\\\work\\\\K...', 'D:\\\\work\\\\Kees\\\\ap...', 25)
+#2 D:\\work\\Kees\\app\\Services\\LogReader.php(25): fopen('D:\\\\work\\\\Kees\\\\st...', 'rb')
+#3 D:\\work\\Kees\\app\\Services\\LogReader.php(41): App\\Services\\LogReader->getsLogByLines()
+#4 D:\\work\\Kees\\app\\Console\\Commands\\LogParser.php(32): App\\Services\\LogReader->readLogAndDispatchMessages()
+#5 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\LogParser->handle()
+#6 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#9 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#10 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(144): Illuminate\\Container\\Container->call(Array)
+#11 D:\\work\\Kees\\vendor\\symfony\\console\\Command\\Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(126): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(1002): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\LogParser), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 D:\\work\\Kees\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 {main}
+"} 
+[2022-09-21 13:12:51] local.ERROR: fopen(D:\work\Kees\storage'\logs\data.log'): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): fopen(D:\\work\\Kees\\storage'\\logs\\data.log'): Failed to open stream: No such file or directory at D:\\work\\Kees\\app\\Services\\LogReader.php:25)
+[stacktrace]
+#0 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(259): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'fopen(D:\\\\work\\\\K...', 'D:\\\\work\\\\Kees\\\\ap...', 25)
+#1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'fopen(D:\\\\work\\\\K...', 'D:\\\\work\\\\Kees\\\\ap...', 25)
+#2 D:\\work\\Kees\\app\\Services\\LogReader.php(25): fopen('D:\\\\work\\\\Kees\\\\st...', 'rb')
+#3 D:\\work\\Kees\\app\\Services\\LogReader.php(41): App\\Services\\LogReader->getsLogByLines()
+#4 D:\\work\\Kees\\app\\Console\\Commands\\LogParser.php(32): App\\Services\\LogReader->readLogAndDispatchMessages()
+#5 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\LogParser->handle()
+#6 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#9 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#10 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(144): Illuminate\\Container\\Container->call(Array)
+#11 D:\\work\\Kees\\vendor\\symfony\\console\\Command\\Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(126): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(1002): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\LogParser), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 D:\\work\\Kees\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 {main}
+"} 
+[2022-09-21 13:13:06] local.INFO: Request a144a7fe-ba0c-4608-8402-71b8f7b9ecb9 was saved successful  
+[2022-09-21 13:13:06] local.INFO: Request 69cdff27-1237-4bb7-8992-fdc59b0005ce was saved successful  
+[2022-09-21 13:13:21] local.INFO: Request a144a7fe-ba0c-4608-8402-71b8f7b9ecb9 was saved successful  
+[2022-09-21 13:13:21] local.INFO: Request 69cdff27-1237-4bb7-8992-fdc59b0005ce was saved successful  
+[2022-09-21 13:15:49] local.ERROR: No arguments expected for "log:parser" command, got "\logs\data.log". {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): No arguments expected for \"log:parser\" command, got \"\\logs\\data.log\". at D:\\work\\Kees\\vendor\\symfony\\console\\Input\\ArgvInput.php:193)
+[stacktrace]
+#0 D:\\work\\Kees\\vendor\\symfony\\console\\Input\\ArgvInput.php(86): Symfony\\Component\\Console\\Input\\ArgvInput->parseArgument('\\\\logs\\\\data.log')
+#1 D:\\work\\Kees\\vendor\\symfony\\console\\Input\\ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('\\\\logs\\\\data.log', true)
+#2 D:\\work\\Kees\\vendor\\symfony\\console\\Input\\Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#3 D:\\work\\Kees\\vendor\\symfony\\console\\Command\\Command.php(267): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#4 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(126): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#5 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(1002): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\LogParser), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 D:\\work\\Kees\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 {main}
+"} 
+[2022-09-21 13:15:55] local.ERROR: No arguments expected for "log:parser" command, got "-". {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): No arguments expected for \"log:parser\" command, got \"-\". at D:\\work\\Kees\\vendor\\symfony\\console\\Input\\ArgvInput.php:193)
+[stacktrace]
+#0 D:\\work\\Kees\\vendor\\symfony\\console\\Input\\ArgvInput.php(86): Symfony\\Component\\Console\\Input\\ArgvInput->parseArgument('-')
+#1 D:\\work\\Kees\\vendor\\symfony\\console\\Input\\ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('-', true)
+#2 D:\\work\\Kees\\vendor\\symfony\\console\\Input\\Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#3 D:\\work\\Kees\\vendor\\symfony\\console\\Command\\Command.php(267): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#4 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(126): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#5 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(1002): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\LogParser), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 D:\\work\\Kees\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 {main}
+"} 
+[2022-09-21 13:16:15] local.ERROR: The "--P" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--P\" option does not exist. at D:\\work\\Kees\\vendor\\symfony\\console\\Input\\ArgvInput.php:220)
+[stacktrace]
+#0 D:\\work\\Kees\\vendor\\symfony\\console\\Input\\ArgvInput.php(147): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('P', '\\\\logs\\\\data.log')
+#1 D:\\work\\Kees\\vendor\\symfony\\console\\Input\\ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--P=\\\\logs\\\\data....')
+#2 D:\\work\\Kees\\vendor\\symfony\\console\\Input\\ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('--P=\\\\logs\\\\data....', true)
+#3 D:\\work\\Kees\\vendor\\symfony\\console\\Input\\Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 D:\\work\\Kees\\vendor\\symfony\\console\\Command\\Command.php(267): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#5 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(126): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#6 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(1002): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\LogParser), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 D:\\work\\Kees\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2022-09-21 13:16:22] local.ERROR: The "path" argument does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\InvalidArgumentException(code: 0): The \"path\" argument does not exist. at D:\\work\\Kees\\vendor\\symfony\\console\\Input\\Input.php:110)
+[stacktrace]
+#0 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Concerns\\InteractsWithIO.php(84): Symfony\\Component\\Console\\Input\\Input->getArgument('path')
+#1 D:\\work\\Kees\\app\\Console\\Commands\\LogParser.php(31): Illuminate\\Console\\Command->argument('path')
+#2 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\LogParser->handle()
+#3 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#6 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#7 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(144): Illuminate\\Container\\Container->call(Array)
+#8 D:\\work\\Kees\\vendor\\symfony\\console\\Command\\Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(126): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(1002): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\LogParser), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 D:\\work\\Kees\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 {main}
+"} 
+[2022-09-21 13:16:41] local.ERROR: The "path" argument does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\InvalidArgumentException(code: 0): The \"path\" argument does not exist. at D:\\work\\Kees\\vendor\\symfony\\console\\Input\\Input.php:110)
+[stacktrace]
+#0 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Concerns\\InteractsWithIO.php(84): Symfony\\Component\\Console\\Input\\Input->getArgument('path')
+#1 D:\\work\\Kees\\app\\Console\\Commands\\LogParser.php(31): Illuminate\\Console\\Command->argument('path')
+#2 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\LogParser->handle()
+#3 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#6 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#7 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(144): Illuminate\\Container\\Container->call(Array)
+#8 D:\\work\\Kees\\vendor\\symfony\\console\\Command\\Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(126): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(1002): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\LogParser), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 D:\\work\\Kees\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 {main}
+"} 
+[2022-09-21 13:17:01] local.INFO: Request a144a7fe-ba0c-4608-8402-71b8f7b9ecb9 was saved successful  
+[2022-09-21 13:17:01] local.INFO: Request 69cdff27-1237-4bb7-8992-fdc59b0005ce was saved successful  
+[2022-09-21 13:18:41] local.ERROR: fopen(D:\work\Kees\storage=\logs\data.log): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): fopen(D:\\work\\Kees\\storage=\\logs\\data.log): Failed to open stream: No such file or directory at D:\\work\\Kees\\app\\Services\\LogReader.php:25)
+[stacktrace]
+#0 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(259): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'fopen(D:\\\\work\\\\K...', 'D:\\\\work\\\\Kees\\\\ap...', 25)
+#1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'fopen(D:\\\\work\\\\K...', 'D:\\\\work\\\\Kees\\\\ap...', 25)
+#2 D:\\work\\Kees\\app\\Services\\LogReader.php(25): fopen('D:\\\\work\\\\Kees\\\\st...', 'rb')
+#3 D:\\work\\Kees\\app\\Services\\LogReader.php(41): App\\Services\\LogReader->getsLogByLines()
+#4 D:\\work\\Kees\\app\\Console\\Commands\\LogParser.php(33): App\\Services\\LogReader->readLogAndDispatchMessages()
+#5 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\LogParser->handle()
+#6 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#9 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#10 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(144): Illuminate\\Container\\Container->call(Array)
+#11 D:\\work\\Kees\\vendor\\symfony\\console\\Command\\Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(126): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(1002): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\LogParser), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 D:\\work\\Kees\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 {main}
+"} 
+[2022-09-21 13:18:56] local.INFO: Request a144a7fe-ba0c-4608-8402-71b8f7b9ecb9 was saved successful  
+[2022-09-21 13:18:56] local.INFO: Request 69cdff27-1237-4bb7-8992-fdc59b0005ce was saved successful  
+[2022-09-21 13:19:07] local.ERROR: App\Services\LogReader::__construct(): Argument #1 ($path) must be of type string, null given, called in D:\work\Kees\app\Console\Commands\LogParser.php on line 32 {"exception":"[object] (TypeError(code: 0): App\\Services\\LogReader::__construct(): Argument #1 ($path) must be of type string, null given, called in D:\\work\\Kees\\app\\Console\\Commands\\LogParser.php on line 32 at D:\\work\\Kees\\app\\Services\\LogReader.php:13)
+[stacktrace]
+#0 D:\\work\\Kees\\app\\Console\\Commands\\LogParser.php(32): App\\Services\\LogReader->__construct(NULL)
+#1 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\LogParser->handle()
+#2 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#5 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#6 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(144): Illuminate\\Container\\Container->call(Array)
+#7 D:\\work\\Kees\\vendor\\symfony\\console\\Command\\Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(126): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(1002): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\LogParser), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 D:\\work\\Kees\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 {main}
+"} 
+[2022-09-21 13:21:05] local.ERROR: App\Services\LogReader::__construct(): Argument #1 ($path) must be of type string, null given, called in D:\work\Kees\app\Console\Commands\LogParser.php on line 35 {"exception":"[object] (TypeError(code: 0): App\\Services\\LogReader::__construct(): Argument #1 ($path) must be of type string, null given, called in D:\\work\\Kees\\app\\Console\\Commands\\LogParser.php on line 35 at D:\\work\\Kees\\app\\Services\\LogReader.php:13)
+[stacktrace]
+#0 D:\\work\\Kees\\app\\Console\\Commands\\LogParser.php(35): App\\Services\\LogReader->__construct(NULL)
+#1 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\LogParser->handle()
+#2 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#5 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#6 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(144): Illuminate\\Container\\Container->call(Array)
+#7 D:\\work\\Kees\\vendor\\symfony\\console\\Command\\Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(126): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(1002): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\LogParser), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 D:\\work\\Kees\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 D:\\work\\Kees\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 D:\\work\\Kees\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 {main}
+"} 
+[2022-09-21 13:26:10] local.INFO: Request a144a7fe-ba0c-4608-8402-71b8f7b9ecb9 was saved successful  
+[2022-09-21 13:26:10] local.INFO: Request 69cdff27-1237-4bb7-8992-fdc59b0005ce was saved successful  
