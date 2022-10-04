@@ -17,14 +17,8 @@ php artisan queue:work
 After that you will have two options how to run Parser. 
 1. Via command ```php artisan log:parser --path=``` and give the path to log file
 2. Go to the browser and open  http://127.0.0.1:8000/
-### 
 
-About the risks I can say that any text parser have to many abilities to throw an error.
-This time I use regular expressions that can be not the best idea because of variety of the logs.
-Queue helps to balancing loading of your DB (you can give a timeout for messages).
-
-
-## Example log file output
+### Example log file output
 
 ```
 {"level":30,"time":1661472030179,"pid":774314,"hostname":"ns3205231","reqId":"69cdff27-1237-4bb7-8992-fdc59b0005ce","req":{"method":"POST","url":"/prod/consent","hostname":"api.cookiefirst.com","remoteAddress":"88.68.165.117","remotePort":50402},"msg":"incoming request"}

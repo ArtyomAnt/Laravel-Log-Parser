@@ -39,7 +39,6 @@ class LogReader
         $request_id = "";
 
         foreach ($this->getsLogByLines() as $iteration) {
-            if (!preg_match('/{"level|method":"?.*/', $iteration)) {
                 if (!$flag && preg_match($this->converter::START_REQUEST_PATTERN, $iteration, $match)) {
                     $buffer = "";
                     $flag = 1;
@@ -59,7 +58,6 @@ class LogReader
                 }
 
                 $buffer .= $iteration;
-            }
         }
     }
 }
